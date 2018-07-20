@@ -5,7 +5,8 @@ import {
     Card,
     CardHeader,
     CardBody,
-    Table
+    Table,
+    Button
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -30,12 +31,18 @@ class SubjectList extends Component {
                                 <Table responsive>
                                     <thead>
                                         <tr>
-                                            <th></th>
+                                            <th>Name</th>
+                                            <th>Date</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td></td>
+                                            <td>Puzzle</td>
+                                            <td>09/07/2018</td>
+                                            <td>
+                                                <Button color="warning">Delete</Button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </Table>
